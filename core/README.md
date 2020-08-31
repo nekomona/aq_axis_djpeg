@@ -2,7 +2,7 @@
 
 ![jpegd](docimg/jpegd.png)
 
-Original author: [aquaxis](https://github.com/aquaxis)
+Original author: [aquaxis](https://github.com/aquaxis)  
 Bug fixes and improvements: [nekomona](https://github.com/nekomona)
 
 ## Introduction
