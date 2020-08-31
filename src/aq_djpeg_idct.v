@@ -64,6 +64,7 @@ module aq_djpeg_idct(
     wire [4:0]      DctBAddress;
     wire [15:0]     DctBDataA;
     wire [15:0]     DctBDataB;
+    wire            DctBIdle;
 
     aq_djpeg_idctb u_jpeg_idctb(
         .rst            ( rst               ),

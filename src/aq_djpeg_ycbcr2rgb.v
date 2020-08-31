@@ -62,7 +62,7 @@ module aq_djpeg_ycbcr2rgb(
 			RunCount	<= 8'h00;
 			RunBlockX	<= 12'h000;
 			RunBlockY	<= 12'h000;
-			RunComp	<= 1'b0;
+			RunComp	<= 3'b0;
 			RunSamplingW <= 2'b0;
 			RunSamplingH <= 2'b0;
 		end else begin
