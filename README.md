@@ -1,6 +1,6 @@
 ### AXI-4 JPEG Decoder
 
-Github:   [https://github.com/ultraembedded/core_jpeg_decoder](https://github.com/ultraembedded/core_jpeg_decoder)
+Github:   [https://github.com/ultraembedded/legacy_jpeg_decoder](https://github.com/ultraembedded/legacy_jpeg_decoder)
 
 This component is a HW JPEG decoder (in Verilog) with AXI-4 DMA.  
 Based around [aquaxis](https://github.com/aquaxis) JPEG decoder core.
