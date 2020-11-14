@@ -52,7 +52,7 @@ module aq_djpeg_hm_decode(
 
 	input			DataOutIdle,
 	output			DataOutEnable,
-	output [2:0]	DataOutColor,
+	output reg [2:0]	DataOutColor,
 
 	// Output decode data
 	output          DecodeNextBlock,
@@ -270,7 +270,6 @@ module aq_djpeg_hm_decode(
 	reg [4:0]	UseWidth;		// Output used width
 
 //	reg				 DataOutEnable;
-	reg [2:0]	DataOutColor;
 
 	reg signed [31:0] PreData [0:2];
 

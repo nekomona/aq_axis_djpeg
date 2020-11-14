@@ -29,7 +29,7 @@ module aq_djpeg_regdata(
 	output			DataInReq,	// Data Request
 
 	// DataOut
-	output [31:0]	DataOut,			// Data Out
+	output reg [31:0] 	DataOut,			// Data Out
 	output			DataOutEnable,	// Data Out Enable
 	output          DataOutEnd,
 
@@ -310,7 +310,6 @@ module aq_djpeg_regdata(
 
 	reg				OutEnable;
 	reg				PreEnable;
-	reg [31:0]		DataOut;
 
 	always @(posedge clk or negedge rst) begin
 		if(!rst) begin

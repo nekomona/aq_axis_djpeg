@@ -59,10 +59,10 @@ module aq_djpeg_fsm(
 	output [7:0]	HuffmanStart,
 
 	//
-	output			ImageEnable,
-	output          FetchImageEnable,
+	output reg		ImageEnable,
+	output reg      FetchImageEnable,
 	output reg [2:0]	JpegComp,
-	output          JpegProgressive,
+	output reg         JpegProgressive,
 	output reg [15:0]  JpegRestart,
 	output [1:0]    OutputSubSamplingW,
 	output [1:0]    OutputSubSamplingH,
@@ -142,11 +142,6 @@ module aq_djpeg_fsm(
 	reg [1:0]       SubSamplingW;
 	reg [1:0]       SubSamplingH;
 
-    reg             JpegProgressive;
-
-	reg				ImageEnable;
-	reg				FetchImageEnable;
-	
 	reg            LastDataEnable;
 
 	always @(posedge clk or negedge rst) begin

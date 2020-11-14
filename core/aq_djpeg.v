@@ -43,7 +43,6 @@ module aq_djpeg(
 );
 	wire [31:0]		JpegData;
 	wire			JpegDataEnable;
-	wire			JpegDecodeIdle;
 	wire            JpegDataEnd;
 
 	wire			UseBit;

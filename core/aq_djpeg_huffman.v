@@ -182,6 +182,9 @@ module aq_djpeg_huffman(
 	assign HmInEnable = DataInEnable & (~HmDecodeFinish) & (~HmDecodePreAlignByte) & (~HmDecodeAlignByte);
 	assign DecodeAlignByte = HmDecodeAlignByte;
 
+	wire HmOutIdle;
+	wire HmDecEnable;
+
 	aq_djpeg_hm_decode u_jpeg_hm_decode(
 		.rst				( rst					),
 		.clk				( clk					),
